@@ -1,4 +1,4 @@
-footer {
+.App-footer {
   padding: 18px 14px;
   border-top: 1px solid var(--color-border);
   color: var(--color-muted);
@@ -6,6 +6,7 @@ footer {
   text-align: center;
 }
 
-footer p {
+.App-footer p {
   margin: 0;
+  color:brown
 }

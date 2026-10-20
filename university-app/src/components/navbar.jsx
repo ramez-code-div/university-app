@@ -1,10 +1,13 @@
-import "<div className="" />
-<navbar></navbar>.css"
-
+import "./navbar.css";
 function Navbar() {
   return (
-    <nav>
-      <a href="#accueil" class="E">Accueil</a>
+    <nav className="App-navbar">
+      <h1>Liste des étudiants</h1>
+      <h2>
+        <a href="">Accueil</a> 
+        <a href="">Contact</a>
+      </h2>
+      <a href="#accueil" class="E">Groupe</a>
       {" | "}
       <a href="#etudiants" class="E">Étudiants</a>
     </nav>

@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import StudentCard from './components/StudentCard.jsx'
-import header from "./components/header.jsx";
-import navbar from "./components/navbar.jsx";
-import footer from "./components/footer.jsx";
-const etudiant = {
+import Header from './components/header.jsx'
+import Navbar from './components/navbar.jsx'
+import Footer from './components/footer.jsx'
+import photo from "./assets/pt.jpg"
+import photob from "./assets/fille.jpg"
+import photoc from "./assets/men.jpg"
+const etudiant = [
   {
     prenom:"Ramez",
     nom : "Ben mohamed",
@@ -14,7 +17,8 @@ const etudiant = {
     annee:"2026/2027",
     grp:"GLSI D1",
     ville:"Mahdia",
-    img : "student image",};
+    studentimg : photo,
+  },
   {
     prenom:"asma",
     nom : "fathalah",
@@ -24,8 +28,8 @@ const etudiant = {
     annee:"2026/2027",
     grp:"GLSI A1",
     ville:"sousse",
-    img : "student image",
-  };
+    studentimg : photob,
+  },
   {
     prenom:"ahmed",
     nom : "abid",
@@ -35,16 +39,15 @@ const etudiant = {
     annee:"2026/2027",
     grp:"GLSI B1",
     ville:"jandouba",
-    img : "student image",
-  };
-};
+    studentimg :photoc,
+  },
+]
 
 function App() {
- const [count, setCount] = useState(0)
   return (
     <div className="container">
-      <header />
-      <navbar />
+      <Header />
+      <Navbar />
       {etudiant.map((etudiant) => (<StudentCard  
         prenom={etudiant.prenom}
         nom={etudiant.nom}
@@ -54,10 +57,12 @@ function App() {
         annee={etudiant.annee}
         grp={etudiant.grp}
         ville={etudiant.ville}
-        img={etudiant.img}
-        />))}
+        studentimg={etudiant.studentimg}
+        />
+        ))}
+      <Footer />
     </div>
   )
 };
-<footer />
+
 export default App;

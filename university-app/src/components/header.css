@@ -6,32 +6,10 @@ App-header {
 }
 
 .App-header h1 {
-  margin: 0 0 20px;
-  color: var(--color-ink);
+  margin: 5 0 20px;
+  color:blue;
   font-size: clamp(1.8rem, 4vw, 2.7rem);
-  font-weight: 750;
+  font-weight: 900;
   letter-spacing: -0.045em;
 }
 
-.App-header h2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin: 0;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
-.App-header a {
-  padding: 8px 14px;
-  border-radius: 999px;
-  color: var(--color-muted);
-  text-decoration: none;
-  transition: color 160ms ease, background-color 160ms ease;
-}
-
-.App-header a:hover {
-  background: #e7f2eb;
-  color: var(--color-accent-dark);
-}
